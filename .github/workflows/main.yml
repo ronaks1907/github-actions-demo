@@ -15,7 +15,6 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-          sudo apt install apache2 -y ${{ github.workspace }}
       - name: Install Apache
         run: |
           pwd
