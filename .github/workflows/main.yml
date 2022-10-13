@@ -15,5 +15,5 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-          sudo apt install apache2 -y
+          sudo apt install apache2 -y ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
