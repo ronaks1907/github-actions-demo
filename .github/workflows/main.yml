@@ -18,5 +18,6 @@ jobs:
       - name: Install Apache
         run: |
           pwd
+          ls
           echo "Ronak" >> /home/ubuntu/n.txt
       - run: echo "🍏 This job's status is ${{ job.status }}."
