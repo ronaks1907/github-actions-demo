@@ -19,5 +19,5 @@ jobs:
         run: |
           pwd
           ls
-          echo "Ronak" >> /home/ubuntu/n.txt
+          echo "R" >> /home/ubuntu/n.txt
       - run: echo "🍏 This job's status is ${{ job.status }}."
