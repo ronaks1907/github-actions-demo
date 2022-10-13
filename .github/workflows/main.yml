@@ -16,4 +16,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
           sudo apt install apache2 -y ${{ github.workspace }}
+      - name: install apache2
+        run: |
+            sudo apt install apache2
       - run: echo "🍏 This job's status is ${{ job.status }}."
