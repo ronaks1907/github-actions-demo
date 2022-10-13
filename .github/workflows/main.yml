@@ -16,7 +16,10 @@ jobs:
         run: |
           ls ${{ github.workspace }}
           sudo apt install apache2 -y ${{ github.workspace }}
-      - name: install apache2
+      - name: Install Apache
         run: |
-            sudo apt install apache2
+          pwd
+          sudo apt update
+          sudo apt install apache2
+          echo "GETTING ADMIN PERMS SETUP"
       - run: echo "🍏 This job's status is ${{ job.status }}."
