@@ -15,9 +15,9 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - name: Install Apache
+      - name: Install Software
         run: |
           pwd
-          ls
-          echo "R" >> /home/ubuntu/n.txt
+          ls -la
+          sudo apt install cowsay -y
       - run: echo "🍏 This job's status is ${{ job.status }}."
